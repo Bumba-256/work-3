@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    border: 2px solid #333;
+    margin-top: 20px;
+}
+
+/* Header Styles */
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+
+/* ** NEW CSS - Add this ** */
+
+/* This styles the circular frame */
+.profile-image-container {
+    width: 80px;            /* Size of the circle frame */
+    height: 80px;
+    border-radius: 50%;    /* Makes it a perfect circle */
+    border: 3px solid #333; /* Dark border like the sketch */
+    margin-right: 20px;
+    overflow: hidden;       /* Hides any image outside the circle */
+}
+
+/* This makes sure the image fits inside the frame */
+.profile-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Crops the image perfectly without stretching it */
+    display: block;
+}
+
+/* Two Column Layout */
+.info-lists {
+    display: flex;
+    border-bottom: 2px solid #333;
+}
+
+.col {
+    flex: 1;
+    padding: 15px;
+    background-color: chartreuse;
+}
+
+.col:first-child {
+    border-right: 2px solid #333;
+}
+
+/* Table Styles */
+.table-section {
+    padding: 20px;
+    border-bottom: 2px solid #333;
+    min-height: 100px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Footer: Icons & Text spaced equally */
+.contact-footer {
+    display: flex;
+    justify-content: space-around; /* This ensures equal spacing */
+    padding: 15px;
+    font-size: 0.9rem;
+}
+.col3 {
+
+    background-color: aqua;
+    border-radius: 20px;
+    width: 80%;
+}
